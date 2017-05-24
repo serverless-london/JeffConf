@@ -1,0 +1,24 @@
+{
+  "name": "jeffconf",
+  "version": "0.0.1",
+  "description": "JeffConf website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serverless-london/JeffConf.git"
+  },
+  "keywords": [
+    "jeffconf",
+    "serverless",
+    "website"
+  ],
+  "author": "A Stanley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serverless-london/JeffConf/issues"
+  },
+  "homepage": "https://github.com/serverless-london/JeffConf#readme"
+}
