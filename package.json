@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/serverless-london/JeffConf/issues"
   },
-  "homepage": "https://github.com/serverless-london/JeffConf#readme"
+  "homepage": "https://github.com/serverless-london/JeffConf#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  }
 }
