@@ -5,8 +5,7 @@
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <body class="bg-white">
     <header class="sans-serif navy">
-      <nav class="dt w-100">
-        <div class="mw8 center h3-ns">
+      <nav class="dt w-100 mw8 center h3-ns">
             <div class="dtc-ns dn v-mid ph3 pv1">
               <div onclick="changeArticle('why')" class="tc pa1 grow-large">
                 <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,h_54/v1486988424/SERVERLESS_NO_BACKGROUND_opzcgz.png" alt="Geoff" height="54" width="36">
@@ -19,7 +18,6 @@
               <div onclick="changeArticle('coc')" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Code of Conduct</div>
               <div onclick="changeArticle('tickets')" class="f5 fw4 shadow-hover no-underline white bg-blue dib ml2 pa2 ba b--transparent br1">Tickets</div> 
             </div>
-        </div>
       </nav>
 
       <div class="dt w-100 vh-50 center cover" style="background-image: url(https://res.cloudinary.com/senzo/image/upload/c_scale,w_1920/v1495618183/London_sfqkk8.jpg)">
@@ -115,18 +113,5 @@
       
 
   </body>
-  <script type="text/javascript">
-    function changeArticle(elementID) {
-            var contentBody = document.getElementById("contentBody").children;
-            for (var i = 0; i < contentBody.length; i++) {
-                if (contentBody[i].id == elementID) {
-                    contentBody[i].className = "dtc w-100"
-                } else {
-                contentBody[i].className ="dn";
-                }
-            }
-            
-            
-        }   
-  </script>
+  <script type="text/javascript" src="jeff.js"></script>
 </html>
