@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/serverless-london/JeffConf#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-uglify": "^3.0.0",
