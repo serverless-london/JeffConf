@@ -3,6 +3,7 @@
   <title>JeffConf 2017</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="tachyons.min.css">
+   <link rel="stylesheet" href="font-awesome.min.css">
 
   <!-- 
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
@@ -56,7 +57,7 @@
 
                 <div class="cf center dt-ns pt4 pt5-l ph3 ph0-ns">
                   <div class="dt-row-ns">
-                  <article class="dtc-ns ph1 br2 ba black-60 b--transparent mv1 mv4-ns w-100 w-33-ns mw5 center">
+                  <article onclick="changeArticle('venue')" class="dtc-ns ph1 br2 ba black-60 b--transparent mv1 mv4-ns w-100 w-33-ns mw5 center">
                     <img src="https://res.cloudinary.com/senzo/image/upload/v1496227533/St_John_the_Baptist_vwoyvm.jpg" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
                     <div class="pa2 ph3-ns pb3-ns bg-gold">
                       <div class="dt w-100 mt1">
@@ -70,7 +71,7 @@
                     </div>
                   </article>
 
-                  <article class="dtc-ns ph1 br2 ba black-60 b--transparent mv1 mv4-ns w-100 w-33-ns mw5 center">
+                  <article onclick="changeArticle('tickets')" class="dtc-ns ph1 br2 ba black-60 b--transparent mv1 mv4-ns w-100 w-33-ns mw5 center">
                     <img src="https://res.cloudinary.com/senzo/image/upload/v1496227851/disk_w1wn8t.jpg" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
                     <div class="pa2 ph3-ns pb3-ns bg-green">
                       <div class="dt w-100 mt1">
@@ -84,7 +85,7 @@
                     </div>
                   </article>
 
-                  <article class="dtc-ns ph1 br2 ba black-60 b--transparent mv1 mv4-ns w-100 w-33-ns mw5 center">
+                  <article onclick="changeArticle('speakers')" class="dtc-ns ph1 br2 ba black-60 b--transparent mv1 mv4-ns w-100 w-33-ns mw5 center">
                     <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_256/v1496227230/paulj2_jqdmuh.jpg" class="db w-100 br2 br--top" alt="Photo of Paul looking menacing.">
                     <div class="pa2 ph3-ns pb3-ns bg-light-pink">
                       <div class="dt w-100 mt1">
@@ -289,18 +290,67 @@
         <div id="speakers" class="dn">
             <div class="tc tl-ns">
                 <h3 class="black f2 fw6 tc code">Speakers</h3>
+                <div class="dt mw6 mw7-ns tc mt4 ph3 ph0-ns center">
+                  <div class="dt-row">
+                    <div class="dtc w-33 pa2">
+                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496226986/PaulJ_oo1myq.jpg" class="br2 br--top b--transparent" alt="Photo of Paul looking menacing.">
+                      <p class="tc">
+                      Paul Johnston
+                      </p>
+                      <p class="f6 w-100 black-60">
+                      CTO Movivo
+                      </p>
+                    </div>
+
+                    <div class="dtc w-33 pa2">
+                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496748585/lorna-mitchell_xz407x.jpg" class="br2 br--top b--transparent" alt="Photo of Lorna looking lovely.">
+                      <p class="tc">
+                      Lorna Mitchell
+                      </p>
+                      <p class="f6 w-100 black-60">
+                      IBM
+                      </p>
+                    </div>
+
+                    <div class="dtc w-33 pa2">
+                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496750558/jthomas_cz3mby.png" class="br2 br--top b--transparent" alt="Photo of James looking curious.">
+                      <p class="tc">
+                      James Thomas
+                      </p>
+                      <p class="f6 w-100 black-60">
+                      IBM
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="dt-row">
+                    <div class="dtc w-33 pa2">
+                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496750685/ant_eikja8.png" class="br2 br--top b--transparent" alt="Photo of Ant looking cold">
+                      <p class="tc">
+                      Ant Stanley
+                      </p>
+                      <p class="f6 w-100 black-60">
+                      Serverless London
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
             </div>
         </div>
 
         <div id="venue" class="dn">
             <div class="tc tl-ns center">
                 <h3 class="black f2 fw6 tc code">St John&#39s Church</h3>
-                <div class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
+                <p class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
                   St John&#39s Church is a 191 year old church in Shoreditch surrounded by a public park providing a relaxed atmosphere. A 5 minute walk from Old Street Underground Station it is easily accessible. We believe it provides the perfect space for the type of event we want JeffConf to be. Informal, relaxed, inclusive and most importantly a space that will inspire you.
-                </div>
+                </p>
                 <div class="mt4 mw6 mw7-ns center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.0561137111586!2d-0.08575288445409711!3d51.53053061683303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca4a1c662f3%3A0x32dbb98ab343ecd8!2sSt+John&#39;s+Church%2C+Hoxton!5e0!3m2!1sen!2suk!4v1496669536058" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe class="w-75 vh-75 ml1 ml3-m ml5-l" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.0561137111586!2d-0.08575288445409711!3d51.53053061683303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca4a1c662f3%3A0x32dbb98ab343ecd8!2sSt+John&#39;s+Church%2C+Hoxton!5e0!3m2!1sen!2suk!4v1496669536058" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
+                <p class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
+                Find out more about this fantastic venue <a href="http://www.stjohnshoxton.org.uk/">here</a>
+                </p>
             </div>
         </div>
 
@@ -368,20 +418,13 @@
                   <p>
                   <span>We want to make JeffConf accessible, so have kept prices low to ensure maximum accessibility</span>
                   </p>
-                  <div class="dt pa3 ba b--black">
-                    <div class="dt-row">
-                      <div class="dtc">
-                        Standard Ticket
-                      </div>
-                      <div class="dtc">
-                        Full access to the event, including food and refreshments on the day.
-                      </div>
-                      <div class="dtc ph4">
-                        £30
-                      </div>
-                    </div>
+                  <p class="pa3">
+                    You can purchase tickets via Eventbrite <a href="https://www.eventbrite.co.uk/e/jeffconf-london-july-2017-redefining-serverless-tickets-34905982734">here.</a> 
+                  </p>
+                  <p> or directly on the website below </p>
+                  <div class="mw6 m7-ns mt4">
+                    <div style="width:100%; text-align:left;"><iframe src="//eventbrite.co.uk/tickets-external?eid=34905982734&ref=etckt" frameborder="0" height="445" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.co.uk/">Powered by Eventbrite</a></div></div>
                   </div>
-
                 </div>
             </div>
         </div>
