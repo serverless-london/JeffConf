@@ -23,24 +23,28 @@ function loadPage(){
 		"coc": true,
 		"tickets": true
 	};
-
+	
 //	console.log (window.location.pathname)
-	var sitePath=window.location.pathname.replace("/","");
+	if (window.location.pathname != "") {
+		
+		var sitePath=window.location.pathname.replace("/","");
 
-	if(sitePath.length>0){
-		changeArticle(sitePath);
-/*		
-		if (typeof siteMap(sitePath) === 'object') {
-			if (siteMap(sitePath)) {
-				changeArticle(sitePath)
+		if(sitePath.length>0){
+			changeArticle(sitePath);
+	/*		
+			if (typeof siteMap(sitePath) === 'object') {
+				if (siteMap(sitePath)) {
+					changeArticle(sitePath)
+				} else {
+					changeArticle('home')
+				}
 			} else {
 				changeArticle('home')
 			}
+	*/
 		} else {
 			changeArticle('home')
-		}
-*/
-	} else {
-		changeArticle('home')
+		};
+
 	};
 }

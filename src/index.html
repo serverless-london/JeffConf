@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>JeffConf 2017</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="tachyons.min.css">
-  <link rel="stylesheet" href="font-awesome.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_32/v1496753826/bowler_ygxnpf.ico"/>
+  
+  <head>
+    <title>JeffConf 2017</title>
+    <meta property="og:title" content="JeffConf 2017" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A community based conference focusing on Jeff (Serverless) based platforms and technologies. St John's Church, Hoxton. 7 July 2017" />
+    <meta property="og:url" content="https://www.jeffconf.com" />
+    <meta property="og:image" content="https://res.cloudinary.com/senzo/image/upload/v1496919297/ldnjeff_wbk0nm.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tachyons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_32/v1496753826/bowler_ygxnpf.ico"/>
+  </head>
 
-  <!-- 
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  -->
   <body onload="loadPage()" class="bg-white">
     <header class="sans-serif navy">
       <nav class="dt w-100 mw8 center h3-ns">
@@ -45,7 +49,7 @@
       </div>
     </header>
       
-    <div id="contentBody" class="dt w-100 mw8-l mw6-m ph2 ph0-ns center mt3 sans-serif">
+    <div id="contentBody" class="dt w-100 mw8-l mw7-m ph2 ph0-ns center mt3 sans-serif">
         
         <div id="home" class="dtc w-100">
             <div class="tc tl-ns">
@@ -117,8 +121,6 @@
 
         </div>   
     
-    
-        
     
         <div id="agenda" class="dn">
             <div class="tc tl-ns">
@@ -292,55 +294,144 @@
         </div>
 
         <div id="speakers" class="dn">
-            <div class="tc tl-ns">
+
+            <div>
                 <h3 class="black f2 fw6 tc code">Speakers</h3>
-                <div class="dt mw6 mw7-ns tc mt4 ph3 ph0-ns center">
-                  <div class="dt-row">
-                    <div class="dtc w-33 pa2">
-                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496226986/PaulJ_oo1myq.jpg" class="br2 br--top b--transparent" alt="Photo of Paul looking menacing.">
-                      <p class="tc">
-                      Paul Johnston
-                      </p>
-                      <p class="f6 w-100 black-60">
-                      CTO Movivo
-                      </p>
-                    </div>
-
-                    <div class="dtc w-33 pa2">
-                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496748585/lorna-mitchell_xz407x.jpg" class="br2 br--top b--transparent" alt="Photo of Lorna looking lovely.">
-                      <p class="tc">
-                      Lorna Mitchell
-                      </p>
-                      <p class="f6 w-100 black-60">
-                      IBM
-                      </p>
-                    </div>
-
-                    <div class="dtc w-33 pa2">
-                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496750558/jthomas_cz3mby.png" class="br2 br--top b--transparent" alt="Photo of James looking curious.">
-                      <p class="tc">
-                      James Thomas
-                      </p>
-                      <p class="f6 w-100 black-60">
-                      IBM
-                      </p>
+                <div class="dt mw7 mw8-ns mt4 ph3 ph0-ns center w-100">
+                  
+                  <div id="lornam" class="dt-row w-100 mt4"> 
+                    <div class="dt w-100 pv2 bb b--gray">
+                      <div class="dtc w-80 pa2 pb0 tl nested-copy-line-height v-top">
+                        <p class="f4 mb0">
+                        Lorna Mitchell
+                        </p>
+                        <p class="f6 gray mt0">
+                        IBM
+                        </p>
+                        <p class="f6">
+                        Lorna is based in Yorkshire, UK; she is a Developer Advocate with IBM Cloud Data Services, a published author and experienced conference speaker.  She brings her technical expertise on a range of topics to audiences all over the world with her writing and speaking engagements, always delivered with a very practical slant.  In her spare time, Lorna blogs at <a class="no-underline orange fw6" href="http://lornajane.net">http://lornajane.net</a>.
+                        </p>
+                        <p class="f5 fw6 mb0">
+                        &#35Fun with Serverless Apps
+                        </p>
+                        <p class="f6 mt0">
+                        Serverless and the noOps movement are buzzwords that you’ve probably heard, but could these technologies also solve problems that you actually have?  This session will cover _when_ to use a serverless approach, and answer your questions about how to get started with it.  We’ll look at how to write code for these platforms, and how to safely and repeatadly deploy your code to them.  We’ll also look at how we can use these technologies to build a skill for the Amazon Echo.  This session is suitable for developers of all levels.
+                        </p>
+                      </div>
+                      
+                      <div class="dtc w-20 pa2 v-mid">
+                        <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496748585/lorna-mitchell_xz407x.jpg" class="ba br2 b--transparent" alt="Photo of Lorna looking lovely.">
+                      </div>
                     </div>
                   </div>
 
-                  <div class="dt-row">
-                    <div class="dtc w-33 pa2">
-                      <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496750685/ant_eikja8.png" class="br2 br--top b--transparent" alt="Photo of Ant looking cold">
-                      <p class="tc">
-                      Ant Stanley
-                      </p>
-                      <p class="f6 w-100 black-60">
-                      Serverless London
-                      </p>
+                  <div id="benf" class="dt-row bb b--light-gray w-100 mt1 mt3-ns">
+                    <div class="dt w-100 pv2 bb b--gray">
+                      <div class="dtc w-20 pa2 v-mid">
+                        <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_300/v1496918054/benf_yclcdk.jpg" class="br2 br--top b--transparent" alt="Photo of Ben going places">
+                      </div>
+                      <div class="dtc f4 w-80 pa2 pb0 tl nested-copy-line-height v-top">
+                        <p class="mb0">
+                        Ben Fletcher
+                        </p>
+                        <p class="f6 gray mt0">
+                        Financial Times
+                        </p>
+                        <p class="f6">
+                        Ben Fletcher works as Principal Engineer at Financial Times, leading the development of the high-performing &#38 award-winning <a href="https://ft.com">https://ft.com</a>. In his spare time, he enjoys bouldering &#38 trying to become the MP in his constituency.
+                        </p>
+                        <p class="f6">
+                        PS He&#39s also Deafblind and his first language is British Sign Language. Interpretation will be provided. Come &#38 find out to see what he&#39s all about&#33
+                        </p>
+                        <p class="f5 fw6 mb0">
+                        </p>
+                        <p class="f6 mt0">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="paulj" class="dt-row w-100 mb3">
+                    <div class="dt w-100 pv2 bb b--gray">
+                      
+                      <div class="dtc w-80 pa2 pb0 tl nested-copy-line-height v-top">
+                        <p class="f4 mb0">
+                        Paul Johnston
+                        </p>
+                        <p class="f6 gray mt0">
+                        CTO Movivo
+                        </p>
+                        <p class="f6">
+                        Paul is the CTO of Movivo where he has built his entire product on serverless technologies, whilst actively blogging and regularly speaking about the experience.
+                        </p>
+                      </div>
+
+                      <div class="dtc w-20 pa2 v-mid">
+                        <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496226986/PaulJ_oo1myq.jpg" class="ba br2 b--transparent" alt="Photo of Paul looking menacing.">
+                      </div>
+
+                    </div>
+                  </div>
+
+                  
+                    
+
+                  <div id="jamest" class="dt-row w-100 mt4">
+
+                    <div class="dt w-100 pv2 bb b--gray">
+                      
+                      <div class="dtc w-20 pa2 v-mid">
+                        <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496750558/jthomas_cz3mby.png" class="ba br2 b--transparent" alt="Photo of James looking curious.">
+                      </div>
+
+                      <div class="dtc f4 w-80 pa2 pb0 tl nested-copy-line-height v-top">
+                        <p class="mb0">
+                        James Thomas
+                        </p>
+                        <p class="f6 gray mt0">
+                        IBM
+                        </p>
+                        <p class="f6">
+                        James Thomas is a Developer Advocate with IBM Bluemix and has been pioneering a multi-cloud approach to serverless technologies, actively contributing to the Serverless Framework and regularly speaking about how to build multi-cloud serverless applications.
+                        </p>
+                        <p class="f5 fw6 mb0">
+                        </p>
+                        <p class="f6 mt0">
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div id="ants" class="dt-row bb b--light-gray w-100 mt1 mt3-ns">
+                    <div class="dt w-100 pv2 bb b--gray">
+                      
+                      <div class="dtc f4 w-80 pa2 pb0 tl nested-copy-line-height v-top">
+                        <p class="mb0">
+                        Ant Stanley
+                        </p>
+                        <p class="f6 gray mt0">
+                        Serverless London
+                        </p>
+                        <p class="f6">
+                        Ant Stanley was a co-founder of A Cloud Guru, an online learning startup focusing on cloud computing, which built its entire platform using Serverless technologies. Whilst at A Cloud Guru, Ant organised and launched the first ServerlessConf. Today Ant runs the Serverless London meetup, which is a monthly gathering of Serverless enthusiasts in London.
+                        </p>
+                        <p class="f5 fw6 mb0">
+                        </p>
+                        <p class="f6 mt0">
+                        </p>
+                      </div>
+
+                      <div class="dtc w-20 pa2 v-mid">
+                        <img src="https://res.cloudinary.com/senzo/image/upload/c_scale,w_200/v1496750685/ant_eikja8.png" class="br2 br--top b--transparent" alt="Photo of Ant looking cold">
+                      </div>
+
                     </div>
                   </div>
 
                 </div>
             </div>
+
         </div>
 
         <div id="venue" class="dn">
@@ -349,7 +440,7 @@
                 <p class="black mw6 mw7-ns tc center mt4 ph3 ph0-ns">
                   St John&#39s Church is a 191 year old church in Shoreditch surrounded by a public park providing a relaxed atmosphere. A 5 minute walk from Old Street Underground Station it is easily accessible. We believe it provides the perfect space for the type of event we want JeffConf to be. Informal, relaxed, inclusive and most importantly a space that will inspire you.
                 </p>
-                <div class="w-80 center pa3">
+                <div class="w-100 center pa3">
                 <iframe class="w-75 vh-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.0561137111586!2d-0.08575288445409711!3d51.53053061683303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca4a1c662f3%3A0x32dbb98ab343ecd8!2sSt+John&#39;s+Church%2C+Hoxton!5e0!3m2!1sen!2suk!4v1496669536058" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <p class="black mw6 mw7-ns tc center mt3 ph3 ph0-ns">
@@ -434,6 +525,9 @@
         
     </div>
 
+
+
+
   </body>
 
 <footer class="center tc f6">
@@ -460,6 +554,7 @@
       <div class="fl mw5-ns ml6">
           <p class="fw6 tl mv0 white">7 July 2017</p>
           <p class="fw1 tl mv0">In collaboration with Serverless London</p>
+          <a class="fl fw1 tl mv0 no-underline yellow" href="mailto:jeffconf@serverless.london">jeffconf@serverless.london</a>
       </div>
     </div>
   </div>
