@@ -1,9 +1,9 @@
 
 function changePage (elementID) {
-	history.pushState(null,null,elementID);
+	history.pushState(elementID,null,elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
-}
+};
 
 function changeArticle(elementID) {
             var contentBody = document.getElementById("contentBody").children;
@@ -14,10 +14,10 @@ function changeArticle(elementID) {
                 } else {
                 contentBody[i].className ="dn";
                 }
-            }   
-}
+            }  
+};
 
-function loadPage(){
+function loadPage(event){
 	console.log ("Load Page called");
 
 	var siteMap = {
@@ -51,6 +51,6 @@ function loadPage(){
 		};
 
 	};
-}
+};
 
-window.onpopstate = loadPage();
+window.onpopstate = loadPage(event);
