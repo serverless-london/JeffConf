@@ -2,7 +2,7 @@
 function changePage (elementID) {
 	history.pushState(null,null,elementID);
 	changeArticle(elementID);
-	console.log(elementID)
+	console.log("Change Page: "+ elementID)
 }
 
 function changeArticle(elementID) {
@@ -10,14 +10,14 @@ function changeArticle(elementID) {
             for (var i = 0; i < contentBody.length; i++) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
-                    console.log(elementID)
+                    console.log("Change Article: " + elementID)
                 } else {
                 contentBody[i].className ="dn";
                 }
             }   
 }
 
-function loadPage(event){
+function loadPage(){
 
 	var siteMap = {
 		"home": true,
@@ -29,7 +29,7 @@ function loadPage(event){
 		"tickets": true
 	};
 
-	console.log (window.location.pathname)
+	console.log ("Window Location: " + window.location.pathname)
 	if (window.location.pathname != "") {
 		
 		var sitePath=window.location.pathname.replace("/","");
@@ -54,4 +54,4 @@ function loadPage(event){
 	};
 }
 
-window.onpopstate = loadPage (event);
+window.onpopstate = loadPage ();
