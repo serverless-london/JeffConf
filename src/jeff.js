@@ -3,7 +3,7 @@ window.onpopstate = loadPage(event);
 
 function changePage (elementID) {
 	document.title="JeffConf 2017 - " + elementID;
-	window.history.pushState(elementID,null,"/"+elementID);
+	window.history.pushState({"content":elementID},null,"/"+elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
 };
@@ -50,19 +50,23 @@ function loadPage(event){
 
 			if(sitePath.length>0){
 				changeArticle(sitePath);
+				window.history.replaceState({"content":sitePath},null,null)
 				
 				if (siteMap[sitePath]) {
 						changeArticle(sitePath)
 				} else {
 					changeArticle('home')
+					window.history.replaceState({"content":"home"},null,null)
 				}
 		
 			} else {
 				changeArticle('home')
+				window.history.replaceState({"content":"home"},null,null)
 			};
 
 		} else {
 			changeArticle('home')
+			window.history.replaceState({"content":"home"},null,null)
 		};
 	};
 };
