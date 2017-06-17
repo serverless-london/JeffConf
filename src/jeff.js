@@ -18,6 +18,7 @@ function changeArticle(elementID) {
 }
 
 function loadPage(){
+	console.log ("Load Page called");
 
 	var siteMap = {
 		"home": true,
@@ -28,6 +29,8 @@ function loadPage(){
 		"coc": true,
 		"tickets": true
 	};
+
+	console.log(siteMap)
 
 	console.log ("Window Location: " + window.location.pathname)
 	if (window.location.pathname != "") {
