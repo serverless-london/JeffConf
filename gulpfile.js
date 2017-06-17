@@ -22,7 +22,7 @@ gulp.task('minify', function() {
 });
 
 gulp.task('copy', function(){
-  return gulp.src(['src/_redirects','src/*.xml','src/*.css','*.js'])
+  return gulp.src(['src/_redirects','src/*.xml','src/*.css','src/*.js'])
     .pipe(gulp.dest('dist'));
 });
 
