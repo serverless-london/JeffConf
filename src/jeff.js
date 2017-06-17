@@ -1,6 +1,6 @@
 
 function changePage (elementID) {
-	window.history.pushState(elementID,null,elementID);
+	window.history.pushState({},null,"/"+elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
 };
