@@ -14,6 +14,7 @@ function changeArticle(elementID) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
                     console.log("Change Article: " + elementID)
+                    console.log(history.state.content)
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -23,8 +24,8 @@ function changeArticle(elementID) {
 function loadPage(event){
 
 	if (event) {
-		document.title="JeffConf 2017 - " + event.state
-		changeArticle(event.state);
+		document.title="JeffConf 2017 - " + event.state.content
+		changeArticle(event.state.content);
 	} else {
 
 
