@@ -3,7 +3,7 @@
 
 function changePage (elementID) {
 	document.title="JeffConf 2017 - " + elementID;
-	window.history.pushState({"content":elementID},null,"/"+elementID);
+	window.history.pushState(null,null,elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
 };
@@ -14,7 +14,6 @@ function changeArticle(elementID) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
                     console.log("Change Article: " + elementID)
-                    console.log(history.state.content)
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -22,12 +21,6 @@ function changeArticle(elementID) {
 };
 
 window.onpopstate = function(event){
-
-	if (event) {
-		document.title="JeffConf 2017 - " + event.state.content
-		changeArticle(event.state.content);
-	} else {
-
 
 		console.log ("Load Page called");
 
@@ -51,23 +44,19 @@ window.onpopstate = function(event){
 
 			if(sitePath.length>0){
 				changeArticle(sitePath);
-				window.history.replaceState({"content":sitePath},null,null)
 				
 				if (siteMap[sitePath]) {
 						changeArticle(sitePath)
 				} else {
 					changeArticle('home')
-					window.history.replaceState({"content":"home"},null,null)
 				}
 		
 			} else {
 				changeArticle('home')
-				window.history.replaceState({"content":"home"},null,null)
 			};
 
 		} else {
 			changeArticle('home')
-			window.history.replaceState({"content":"home"},null,null)
 		};
 	};
 };
