@@ -40,7 +40,7 @@ function loadPage(){
 		if(sitePath.length>0){
 			changeArticle(sitePath);
 			
-			if (siteMap(sitePath)) {
+			if (siteMap[sitePath]) {
 				if (siteMap(sitePath)) {
 					changeArticle(sitePath)
 				} else {
