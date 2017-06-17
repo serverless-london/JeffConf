@@ -1,6 +1,6 @@
 
 function changePage (elementID) {
-	history.pushState(elementID,null,elementID);
+	window.history.pushState(elementID,null,elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
 };
@@ -18,6 +18,8 @@ function changeArticle(elementID) {
 };
 
 function loadPage(event){
+	console.log(event);
+
 	console.log ("Load Page called");
 
 	var siteMap = {
