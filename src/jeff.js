@@ -41,11 +41,7 @@ function loadPage(){
 			changeArticle(sitePath);
 			
 			if (siteMap[sitePath]) {
-				if (siteMap(sitePath)) {
 					changeArticle(sitePath)
-				} else {
-					changeArticle('home')
-				}
 			} else {
 				changeArticle('home')
 			}
@@ -57,4 +53,4 @@ function loadPage(){
 	};
 }
 
-window.onpopstate = loadPage ();
+window.onpopstate = loadPage();
