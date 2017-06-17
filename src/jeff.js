@@ -1,5 +1,5 @@
 
-window.onpopstate = loadPage(event);
+//window.onpopstate = loadPage(event);
 
 function changePage (elementID) {
 	document.title="JeffConf 2017 - " + elementID;
@@ -21,7 +21,7 @@ function changeArticle(elementID) {
             }  
 };
 
-function loadPage(event){
+window.onpopstate = function(event){
 
 	if (event) {
 		document.title="JeffConf 2017 - " + event.state.content
