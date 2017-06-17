@@ -1,4 +1,6 @@
 
+window.onpopstate = loadPage(event);
+
 function changePage (elementID) {
 	window.history.pushState({},null,"/"+elementID);
 	changeArticle(elementID);
@@ -11,6 +13,7 @@ function changeArticle(elementID) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
                     console.log("Change Article: " + elementID)
+                    document.title="JeffConf 2017 - " + elementID
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -18,7 +21,6 @@ function changeArticle(elementID) {
 };
 
 function loadPage(event){
-	console.log(event);
 
 	console.log ("Load Page called");
 
@@ -52,7 +54,7 @@ function loadPage(event){
 			changeArticle('home')
 		};
 
+	} else {
+		changeArticle('home')
 	};
 };
-
-window.onpopstate = loadPage(event);
