@@ -20,7 +20,7 @@ function changeArticle(elementID) {
             }  
 };
 
-window.onpopstate = function(event){
+var pageLoad = function(){
 
 	console.log ("Load Page called");
 
@@ -59,3 +59,5 @@ window.onpopstate = function(event){
 		changeArticle('home')
 	};
 };
+
+window.onpopstate = pageLoad();
