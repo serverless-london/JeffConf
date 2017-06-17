@@ -3,7 +3,7 @@ window.onpopstate = loadPage(event);
 
 function changePage (elementID) {
 	document.title="JeffConf 2017 - " + elementID;
-	window.history.pushState({},null,"/"+elementID);
+	window.history.pushState(elementID,null,"/"+elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
 };
@@ -22,40 +22,47 @@ function changeArticle(elementID) {
 
 function loadPage(event){
 
-	console.log ("Load Page called");
+	if (event) {
+		document.title="JeffConf 2017 - " + event.state
+		changeArticle(event.state);
+	} else {
 
-	var siteMap = {
-		"home": true,
-		"agenda": true,
-		"speakers": true,
-		"venue": true,
-		"partners": true,
-		"coc": true,
-		"tickets": true
-	};
 
-	console.log(siteMap)
+		console.log ("Load Page called");
 
-	console.log ("Window Location: " + window.location.pathname)
-	if (window.location.pathname != "") {
-		
-		var sitePath=window.location.pathname.replace("/","");
-		console.log(sitePath);
+		var siteMap = {
+			"home": true,
+			"agenda": true,
+			"speakers": true,
+			"venue": true,
+			"partners": true,
+			"coc": true,
+			"tickets": true
+		};
 
-		if(sitePath.length>0){
-			changeArticle(sitePath);
+		console.log(siteMap)
+
+		console.log ("Window Location: " + window.location.pathname)
+		if (window.location.pathname != "") {
 			
-			if (siteMap[sitePath]) {
-					changeArticle(sitePath)
+			var sitePath=window.location.pathname.replace("/","");
+			console.log(sitePath);
+
+			if(sitePath.length>0){
+				changeArticle(sitePath);
+				
+				if (siteMap[sitePath]) {
+						changeArticle(sitePath)
+				} else {
+					changeArticle('home')
+				}
+		
 			} else {
 				changeArticle('home')
-			}
-	
+			};
+
 		} else {
 			changeArticle('home')
 		};
-
-	} else {
-		changeArticle('home')
 	};
 };
