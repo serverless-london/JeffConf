@@ -22,41 +22,40 @@ function changeArticle(elementID) {
 
 window.onpopstate = function(event){
 
-		console.log ("Load Page called");
+	console.log ("Load Page called");
 
-		var siteMap = {
-			"home": true,
-			"agenda": true,
-			"speakers": true,
-			"venue": true,
-			"partners": true,
-			"coc": true,
-			"tickets": true
-		};
+	var siteMap = {
+		"home": true,
+		"agenda": true,
+		"speakers": true,
+		"venue": true,
+		"partners": true,
+		"coc": true,
+		"tickets": true
+	};
 
-		console.log(siteMap)
+	console.log(siteMap)
 
-		console.log ("Window Location: " + window.location.pathname)
-		if (window.location.pathname != "") {
-			
-			var sitePath=window.location.pathname.replace("/","");
-			console.log(sitePath);
-
-			if(sitePath.length>0){
-				changeArticle(sitePath);
-				
-				if (siteMap[sitePath]) {
-						changeArticle(sitePath)
-				} else {
-					changeArticle('home')
-				}
+	console.log ("Window Location: " + window.location.pathname)
+	if (window.location.pathname != "") {
 		
+		var sitePath=window.location.pathname.replace("/","");
+		console.log(sitePath);
+
+		if(sitePath.length>0){
+			changeArticle(sitePath);
+			
+			if (siteMap[sitePath]) {
+					changeArticle(sitePath)
 			} else {
 				changeArticle('home')
-			};
-
+			}
+	
 		} else {
 			changeArticle('home')
 		};
+
+	} else {
+		changeArticle('home')
 	};
 };
