@@ -2,6 +2,7 @@
 window.onpopstate = loadPage(event);
 
 function changePage (elementID) {
+	document.title="JeffConf 2017 - " + elementID;
 	window.history.pushState({},null,"/"+elementID);
 	changeArticle(elementID);
 	console.log("Change Page: "+ elementID)
@@ -13,7 +14,6 @@ function changeArticle(elementID) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
                     console.log("Change Article: " + elementID)
-                    document.title="JeffConf 2017 - " + elementID
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -41,6 +41,7 @@ function loadPage(event){
 		
 		var sitePath=window.location.pathname.replace("/","");
 		console.log(sitePath);
+
 		if(sitePath.length>0){
 			changeArticle(sitePath);
 			
