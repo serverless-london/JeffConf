@@ -26,7 +26,7 @@ gulp.task('copy', function(){
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build',['minify','compress','copy']);
+gulp.task('build',['minify','copy']);
 
 // Static server
 gulp.task('browser-sync', function() {
