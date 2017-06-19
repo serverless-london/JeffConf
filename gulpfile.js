@@ -22,11 +22,11 @@ gulp.task('minify', function() {
 });
 
 gulp.task('copy', function(){
-  return gulp.src(['src/_redirects','src/*.xml','src/*.css'])
+  return gulp.src(['src/_redirects','src/*.xml','src/*.css','src/*.js'])
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build',['minify','compress','copy']);
+gulp.task('build',['minify','copy']);
 
 // Static server
 gulp.task('browser-sync', function() {
