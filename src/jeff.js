@@ -1,11 +1,7 @@
-
-//window.onpopstate = loadPage(event);
-
 function changePage (elementID) {
 	document.title="JeffConf 2017 - " + elementID;
 	window.history.pushState(null,null,elementID);
 	changeArticle(elementID);
-	console.log("Change Page: "+ elementID)
 };
 
 function changeArticle(elementID) {
@@ -13,7 +9,6 @@ function changeArticle(elementID) {
             for (var i = 0; i < contentBody.length; i++) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
-                    console.log("Change Article: " + elementID)
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -21,9 +16,6 @@ function changeArticle(elementID) {
 };
 
 function pageLoad(){
-
-	console.log ("Load Page called");
-
 	var siteMap = {
 		"home": true,
 		"agenda": true,
@@ -34,13 +26,9 @@ function pageLoad(){
 		"tickets": true
 	};
 
-	console.log(siteMap)
-
-	console.log ("Window Location: " + window.location.pathname)
 	if (window.location.pathname != "") {
 		
 		var sitePath=window.location.pathname.replace("/","");
-		console.log(sitePath);
 
 		if(sitePath.length>0){
 			changeArticle(sitePath);
@@ -60,12 +48,7 @@ function pageLoad(){
 	};
 };
 
-
 window.onpopstate = function(event){
-	
-
-	console.log ("popstate called");
-
 	if (event) {
 		pageLoad()
 	} 
@@ -73,8 +56,5 @@ window.onpopstate = function(event){
 };
 
 window.onload = function(){
-	console.log ("onload called");
-
 	pageLoad()
-
 };
