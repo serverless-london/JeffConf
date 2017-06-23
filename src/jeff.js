@@ -28,7 +28,7 @@ function pageLoad(){
 
 	if (window.location.pathname != "") {
 		
-		var sitePath=window.location.pathname.replace("/","");
+		var sitePath=window.location.pathname.replace(/\//g, '');
 
 		if(sitePath.length>0){
 			changeArticle(sitePath);
