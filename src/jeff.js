@@ -1,6 +1,16 @@
 function changePage (elementID) {
 	document.title="JeffConf 2017 - " + elementID;
-	window.history.pushState(null,null,elementID);
+	/*
+	var pathName = window.location.pathname
+	if (pathName > 1) {
+		if (pathName.charAt(pathName.length-1)="/") {
+			window.history.replaceState(null,null,elementID);
+		}
+	} else {
+		window.history.pushState(null,null,elementID);
+	}
+	*/
+	window.history.pushState(null,null,"/"+elementID);
 	changeArticle(elementID);
 };
 
@@ -31,8 +41,9 @@ function pageLoad(){
 		var sitePath=window.location.pathname.replace(/\//g, '');
 
 		if(sitePath.length>0){
+			/* 
 			changeArticle(sitePath);
-			
+			*/
 			if (siteMap[sitePath]) {
 					changeArticle(sitePath)
 			} else {
@@ -48,6 +59,24 @@ function pageLoad(){
 	};
 };
 
+function loadiFrames(){
+
+	var iframeSrc = {
+		"eventbrite": "//eventbrite.co.uk/tickets-external?eid=34905982734&ref=etckt",
+	};
+
+	var frames = document.querySelectorAll ('iframe');
+
+	for (var i = 0; i < frames.length; i++) {
+		var frameId = frames[i].id
+		
+		if (iframeSrc.hasOwnProperty(frameId)) {
+			var currFrame = document.getElementById(frameId)
+			currFrame.src = iframeSrc[frameId]	
+		}
+	}
+};
+
 window.onpopstate = function(event){
 	if (event) {
 		pageLoad()
@@ -56,5 +85,9 @@ window.onpopstate = function(event){
 };
 
 window.onload = function(){
-	pageLoad()
+	pageLoad();
+	loadiFrames()
 };
+
+
+
