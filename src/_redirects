@@ -4,6 +4,7 @@
 /venue    /index.html   200
 /diversity    /index.html   200
 /coc    /index.html   200
+/video    /video.html   200
 
 /home/    /index.html   200
 /agenda/    /index.html   200
@@ -11,3 +12,4 @@
 /venue/    /index.html   200
 /diversity/    /index.html   200
 /coc/    /index.html   200
+/video/    /video.html   200
