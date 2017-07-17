@@ -30,12 +30,12 @@
             </div>
             <div class="dtc v-mid tr-ns tc pa3">
               <a href="/home" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Home</a> 
-              <div href="/agenda" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Agenda</div>
-              <div href="/speakers" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Speakers</div> 
-              <div href="/venue" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Venue</div>
-              <div href="/diversity" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Diversity</div>
-              <div href="/coc" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Code of Conduct</div>
-              <div href="/tickets" class="f5 fw4 shadow-hover no-underline white bg-green dib ml2 pa2 ba b--transparent br1">Tickets</div> 
+              <a href="/agenda" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Agenda</a>
+              <a href="/speakers" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Speakers</a> 
+              <a href="/venue" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Venue</a>
+              <a href="/diversity" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Diversity</a>
+              <a href="/coc" class="f5 fw4 shadow-hover no-underline dib pa1 pa2-ns">Code of Conduct</a>
+              <a href="/tickets" class="f5 fw4 shadow-hover no-underline white bg-green dib ml2 pa2 ba b--transparent br1">Tickets</a> 
             </div>
       </nav>
 
@@ -60,27 +60,30 @@
         
         <div id="home" class="dtc w-100">
             <div class="tc tl-ns">
-            <section class="main-preview-player bg-black flex flex-wrap flex-row-l sans-serif">
-              <div class="primary-video relative flex-auto w-100 w-70-l">
-                <video id="video-js-player" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" crossorigin="anonymous" data-setup='{"techOrder": ["youtube", "html5"]}' >
-                  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                </video>
-                <div class="pa3 white">
-                  <h1 class="mv0 sans-serif fw1 tc" data-video-js-title>&nbsp;</h1>
-                  <p data-video-js-description>&nbsp;</p>
-                </div>
-              </div>
-
-              <div class="playlist-container w-100 w-30-l relative">
-                <p class="dn-l ma3 gray bg-black ttu">Scroll →</p>
-                <div class="vjs-playlist absolute-l absolute--fill ma0 overflow-x-hidden-l overflow-y-hidden overflow-y-scroll-l">
-                  <ol class="vjs-playlist-item-list flex flex-row flex-column-l">
-                    <li class="dn db-l tc pa3 bg-black">Scroll ↓</li>
-                  </ol>
-                </div>
-              </div>
-            </section>
             
+              <section class="main-preview-player w-100 dt" >
+                  <div class="primary-video w-100 w-70-ns pa2 dtc">
+                    <video id="video-js-player" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" crossorigin="anonymous" data-setup='{"techOrder": ["youtube", "html5"]}' >
+                      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                    </video>
+                    <div class="pa3">
+                      <h1 class="mv0 sans-serif fw1 tc" data-video-js-title>&nbsp;</h1>
+                      <p data-video-js-description>&nbsp;</p>
+                    </div>
+                  </div>
+
+                  <div class="playlist-container w-100 w-30-ns relative dtc">
+                    
+                    <div class="dt w-100">
+                      <div class="vjs-playlist absolute-l absolute--fill pa1 ma0 overflow-x-hidden-l overflow-y-hidden overflow-y-scroll-l">
+                        <ol class="vjs-playlist-item-list dt-row">
+                          <li class="dn db-ns tc pa3">Scroll ↓</li>
+                        </ol>
+                      </div>
+                    </div>
+
+                  </div>
+              </section>
 
             </div>
         </div>   
@@ -150,13 +153,13 @@
   <div class="w-100 pt3 pb6 mt2 bg-navy white-70 center">
     <div class="w-100 mw8-l mw6-m ph2 ph0-ns center">
       <div class="fl mw5-ns mh6">
-          <p onclick="changePage('tickets')" class="fw6 shadow-hover no-underline tl mv0 white">Tickets</p> 
-          <p onclick="changePage('home')" class="fw1 shadow-hover no-underline tl mv0">Home</p> 
-          <p onclick="changePage('agenda')" class="fw1 shadow-hover no-underline tl mv0">Agenda</p>
-          <p onclick="changePage('speakers')" class="fw1 shadow-hover no-underline tl mv0">Speakers</p>
-          <p onclick="changePage('venue')" class="fw1 shadow-hover no-underline tl mv0">Venue</p>
-          <p onclick="changePage('diversity')" class="fw1 shadow-hover no-underline tl mv0">Diversity</p> 
-          <p onclick="changePage('coc')" class="fw1 shadow-hover no-underline tl mv0">Code of Conduct</p>
+          <p> <a href="tickets" class="fw6 shadow-hover no-underline tl mv0 white">Tickets</a></p> 
+          <p> <a href="/home" class="fw1 shadow-hover no-underline tl mv0">Home</a></p> 
+          <p> <a href="/agenda" class="fw1 shadow-hover no-underline tl mv0">Agenda</a></p>
+          <p> <a href="/speakers" class="fw1 shadow-hover no-underline tl mv0">Speakers</a></p>
+          <p> <a href="/venue" class="fw1 shadow-hover no-underline tl mv0">Venue</a></p>
+          <p> <a href="/diversity" class="fw1 shadow-hover no-underline tl mv0">Diversity</a></p> 
+          <p> <a href="/coc" class="fw1 shadow-hover no-underline tl mv0">Code of Conduct</a></p>
       </div>
       <div class="fl mw5-ns ml6">
           <p class="fw6 tl mv0 white">St John&#39s Church</p>
