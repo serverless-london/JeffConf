@@ -13,9 +13,9 @@
     <meta name="description" content="A community based conference focusing on Jeff (Serverless) based platforms and technologies. St John's Church, Hoxton. 7 July 2017"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="Content-Language" content="en" />
-    <link rel="stylesheet prefetch" href="/tachyons.min.css" />
+    <link rel="stylesheet prefetch" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
     <link  rel="stylesheet prefetch" href="http://vjs.zencdn.net/6.2.0/video-js.css">
-    <link rel='stylesheet prefetch' href='https://unpkg.com/videojs-playlist-ui@3.0.0/dist/videojs-playlist-ui.vertical.css'>
+<!--    <link rel='stylesheet prefetch' href='https://unpkg.com/videojs-playlist-ui@3.0.0/dist/videojs-playlist-ui.vertical.css'> -->
     <link rel="canonical" href="https://www.jeffconf.com/video" />
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/senzo/image/upload/c_scale,w_32/v1496753826/bowler_ygxnpf.ico"/>
   </head>
@@ -61,8 +61,8 @@
         <div id="home" class="dtc w-100">
             <div class="tc tl-ns">
             
-              <section class="main-preview-player w-100 dt" >
-                  <div class="primary-video w-100 w-70-ns pa2 dtc">
+              <section class="main-preview-player relative w-100 w-80-ns dt" >
+                  <div class="primary-video w-100 w-75-ns pa3 dtc">
                     <video id="video-js-player" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" crossorigin="anonymous" data-setup='{"techOrder": ["youtube", "html5"]}' >
                       <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
                     </video>
@@ -72,12 +72,11 @@
                     </div>
                   </div>
 
-                  <div class="playlist-container w-100 w-30-ns relative dtc">
+                  <div class="playlist-container w-100 w-25-ns relative dtc">
                     
-                    <div class="dt w-100">
-                      <div class="vjs-playlist absolute-l absolute--fill pa1 ma0 overflow-x-hidden-l overflow-y-hidden overflow-y-scroll-l">
-                        <ol class="vjs-playlist-item-list dt-row">
-                          <li class="dn db-ns tc pa3">Scroll ↓</li>
+                    <div class="w-100">
+                      <div class="vjs-playlist overflow-scroll list absolute-ns absolute--fill pa1 ma0 overflow-x-hidden-l overflow-y-hidden overflow-y-scroll-l">
+                        <ol class="vjs-playlist-item-list list pa2">
                         </ol>
                       </div>
                     </div>
@@ -185,7 +184,7 @@
   </div>
 </footer>
   <script src='https://unpkg.com/video.js@5.15.1/dist/video.min.js'></script>
-  <script src='https://unpkg.com/videojs-youtube@2.2.0/dist/Youtube.js'></script>
+  <script src='https://unpkg.com/videojs-youtube@2.4.0/dist/Youtube.js'></script>
   <script src='https://unpkg.com/videojs-playlist@3.0.0/dist/videojs-playlist.js'></script>
   <script src='https://unpkg.com/videojs-playlist-ui@3.0.0/dist/videojs-playlist-ui.js'></script>
   <script type="text/javascript" src="/jeffvideo.js"></script>
